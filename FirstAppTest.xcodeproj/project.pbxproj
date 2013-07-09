@@ -17,7 +17,6 @@
 		A6076870178487330055640F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A607686F178487330055640F /* Default@2x.png */; };
 		A6076872178487330055640F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6076871178487330055640F /* Default-568h@2x.png */; };
 		A6076875178487330055640F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6076873178487330055640F /* MainStoryboard_iPhone.storyboard */; };
-		A6076878178487330055640F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6076876178487330055640F /* MainStoryboard_iPad.storyboard */; };
 		A607687B178487330055640F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A607687A178487330055640F /* ViewController.m */; };
 		A6076883178487330055640F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6076882178487330055640F /* SenTestingKit.framework */; };
 		A6076884178487330055640F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A607685B178487330055640F /* UIKit.framework */; };
@@ -51,7 +50,6 @@
 		A607686F178487330055640F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A6076871178487330055640F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A6076874178487330055640F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		A6076877178487330055640F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		A6076879178487330055640F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A607687A178487330055640F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A6076881178487330055640F /* FirstAppTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +120,6 @@
 				A607686A178487330055640F /* AppDelegate.h */,
 				A607686B178487330055640F /* AppDelegate.m */,
 				A6076873178487330055640F /* MainStoryboard_iPhone.storyboard */,
-				A6076876178487330055640F /* MainStoryboard_iPad.storyboard */,
 				A6076879178487330055640F /* ViewController.h */,
 				A607687A178487330055640F /* ViewController.m */,
 				A6076862178487330055640F /* Supporting Files */,
@@ -239,7 +236,6 @@
 				A6076870178487330055640F /* Default@2x.png in Resources */,
 				A6076872178487330055640F /* Default-568h@2x.png in Resources */,
 				A6076875178487330055640F /* MainStoryboard_iPhone.storyboard in Resources */,
-				A6076878178487330055640F /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +309,6 @@
 				A6076874178487330055640F /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A6076876178487330055640F /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6076877178487330055640F /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		A607688B178487330055640F /* InfoPlist.strings */ = {
@@ -398,7 +386,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstAppTest/FirstAppTest-Prefix.pch";
 				INFOPLIST_FILE = "FirstAppTest/FirstAppTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,7 +399,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstAppTest/FirstAppTest-Prefix.pch";
 				INFOPLIST_FILE = "FirstAppTest/FirstAppTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +459,7 @@
 				A6076895178487330055640F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6076896178487330055640F /* Build configuration list for PBXNativeTarget "FirstAppTestTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +468,7 @@
 				A6076898178487330055640F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
